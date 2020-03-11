@@ -5,7 +5,6 @@ export const getCharacters = async ({
 	setLoading,
 	page,
 	limit = 20,
-	// scrollToBottom = () => {},
 }) => {
 	setLoading(true);
 
@@ -22,7 +21,6 @@ export const getCharacters = async ({
 		ctx.addCharacters(results);
 
 		setLoading(false);
-		// scrollToBottom();
 	} else {
 		setLoading(false);
 	}

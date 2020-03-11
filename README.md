@@ -5,6 +5,12 @@
 ```sh
 cd app
 npm install
+```
+
+Create `secrets.json` in **app/src** with the following content:
+`{ "apiKey": "your-api-key" }`
+
+```sh
 npm start
 ```
 
@@ -17,7 +23,3 @@ npm start
 ## Notes:
 
 I know.. no unit tests. Given the time, and in a proper project, I'd just use Jest and aim for 100% coverage on branches at the very least 👍
-
-You'll also need a little `secrets.json` file in the `src` folder with the api key in it for the requests:
-
-`{ "apiKey": "oh-hello-there" }`

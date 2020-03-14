@@ -25,6 +25,7 @@ export default function CharacterContext({ children }) {
 		</CharacterCtx.Provider>
 	);
 }
+
 CharacterContext.propTypes = {
 	children: PropTypes.node.isRequired,
 };

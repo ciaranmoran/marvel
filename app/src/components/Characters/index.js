@@ -36,7 +36,7 @@ const Characters = () => {
 
 	return (
 		<>
-			<div className="sticky top-0sticky top-0 w-full px-4 mt-2">
+			<div className="sticky top-0 w-full px-4 mt-2">
 				<input
 					type="text"
 					placeholder="Start typing to filter..."

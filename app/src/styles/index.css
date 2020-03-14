@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-	@apply bg-marvel-black;
+  @apply bg-marvel-black;
 }

@@ -1,12 +1,12 @@
 .mc-separator {
-	border-bottom: 2px solid rgb(242, 244, 247);
+  border-bottom: 2px solid rgb(242, 244, 247);
 }
 
 .mc-events {
-	background-color: rgb(242, 244, 247);
+  background-color: rgb(242, 244, 247);
 }
 
 .mc-character-image {
-	min-height: 162px;
-	min-width: 288px;
+  min-height: 162px;
+  min-width: 288px;
 }

@@ -14,7 +14,7 @@ const Characters = () => {
   const [page, setPage] = React.useState(1);
   const [filterValue, setFilterValue] = React.useState('');
   const ctx = React.useContext(CharacterCtx);
-  const { characters, characterLimit: limit } = ctx;
+  const { characters, characterLimit: limit, error } = ctx;
 
   React.useEffect(() => {
     getCharacters({ ctx, setLoading, page, limit });
@@ -53,7 +53,7 @@ const Characters = () => {
         </>
       </div>
       <div className="w-full md:w-1/2 sticky bottom-0 text-white bg-marvel-red text-center m-auto">
-        <LoaderButton {...{ handleClick, loading }} />
+        <LoaderButton {...{ handleClick, loading, error }} />
       </div>
     </>
   );

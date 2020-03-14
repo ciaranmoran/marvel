@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const useCharacterContext = () => {
   const [characterLimit, setCharacterLimit] = React.useState(20);
   const [characters, setCharacters] = React.useState([]);
+  const [error, setError] = React.useState(null);
 
   return {
     characterLimit,
@@ -13,6 +14,8 @@ const useCharacterContext = () => {
     addCharacters: newCharacters => {
       setCharacters([...characters, ...newCharacters]);
     },
+    error,
+    setError,
   };
 };
 

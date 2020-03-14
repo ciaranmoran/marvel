@@ -1,12 +1,17 @@
 import React from 'react';
+import { getLabel } from './LoaderButton.helpers';
 import './LoaderButton.css';
 
-export default function LoaderButton({ handleClick, loading }) {
+export default function LoaderButton({
+  handleClick,
+  loading,
+  error,
+}) {
   return (
     <button
       onClick={handleClick()}
       className="w-full uppercase p-5 mc-loaderbutton-shadow">
-      {loading ? 'Loading...' : 'Load More'}
+      {getLabel(loading, error)}
     </button>
   );
 }

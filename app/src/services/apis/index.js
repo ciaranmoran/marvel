@@ -13,6 +13,7 @@ export const endpoints = {
 
 const handleError = error => {
   console.log(error);
+  return error;
 };
 
 export const GET = async (endpoint, params = {}) => {

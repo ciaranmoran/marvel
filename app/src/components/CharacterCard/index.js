@@ -67,7 +67,7 @@ export default function CharacterCard({ skeleton, character }) {
               <div className="text-white uppercase items-center bg-marvel-red">
                 <button
                   className="w-full p-5"
-                  onClick={handleWikiClick(urls || '')}>
+                  onClick={handleWikiClick(urls || [])}>
                   Character Wiki ›
                 </button>
               </div>

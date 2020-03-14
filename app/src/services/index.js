@@ -23,5 +23,6 @@ export const getCharacters = async ({
     setLoading(false);
   } else {
     setLoading(false);
+    ctx.setError(`${res.data.message} - Try again`);
   }
 };
